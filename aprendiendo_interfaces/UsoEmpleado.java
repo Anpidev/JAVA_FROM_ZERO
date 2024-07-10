@@ -3,7 +3,7 @@ package aprendiendo_interfaces;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class UsoPersona {
+public class UsoEmpleado {
     public static void main(String[] args) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         LocalDate fechaAlta = LocalDate.parse("10/06/2000", formatter);

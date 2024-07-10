@@ -34,8 +34,11 @@ public abstract class Empleado {
 
     public void imprimir() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        System.out.println("DNI: " + dni);
-        System.out.println("Nombre y Apellidos: " + nombre + " " + apellidos);
+        if(dni!=null){
+        System.out.println("DNI: " + dni);}
+        System.out.println("Nombre: " + nombre);
+        if(apellidos!=null){
+        System.out.println("Apellidos: " +  apellidos);}
         System.out.println("Año de alta: " + fechaAlta.format(formatter));
         System.out.println("-----------------------------------------");
     }
