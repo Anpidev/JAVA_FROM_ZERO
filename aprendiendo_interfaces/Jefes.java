@@ -2,7 +2,7 @@ package aprendiendo_interfaces;
 
 import java.time.LocalDate;
 
-public class Jefes extends Empleado implements ParaJefes {
+public class Jefes extends Empleado implements ParaJefes, Comparable <Jefes>{
 
     // Campos de clase
     private double incentivo;
@@ -28,4 +28,13 @@ public class Jefes extends Empleado implements ParaJefes {
     public String getCargo() {
         return "\n Además tiene el cargo de " + cargo;
     }
+
+    @Override
+    
+        public int compareTo(Jefes otroJefe) {
+            // Comparar por sueldo
+            return Double.compare(this.getSueldo(), otroJefe.getSueldo());
+        }
+
+    
 }

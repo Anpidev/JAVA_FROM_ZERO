@@ -33,6 +33,7 @@ public abstract class Empleado {
     public abstract void setIncentivo(double incentivo);
 
     public void imprimir() {
+        //Metemos un formato para imprimir la fecha
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         if(dni!=null){
         System.out.println("DNI: " + dni);}
@@ -40,6 +41,7 @@ public abstract class Empleado {
         if(apellidos!=null){
         System.out.println("Apellidos: " +  apellidos);}
         System.out.println("Año de alta: " + fechaAlta.format(formatter));
+        System.out.println("Sueldo: " +  sueldo);
         System.out.println("-----------------------------------------");
     }
 
