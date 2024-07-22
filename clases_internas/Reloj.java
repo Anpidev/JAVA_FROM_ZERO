@@ -22,7 +22,8 @@ public class Reloj {
          * ADEMAS QUITARIAMOS LOS CAMPOS DE CLASE Y PASARIAN A SER PARAMETROS DE
          * METODOS.
          * Y PRESCINDIR DEL CONSTRUCTOR.
-         * 
+         * public void ejecutarTemporizador(int intervalo, boolean sonido)
+         *  {
          * class DameLaHora implements ActionListener{
          * 
          * @Override
@@ -31,6 +32,20 @@ public class Reloj {
          * Date ahora = new Date ();
          * System.out.println("Cada tres segundos tiene su hora: "+ahora);
          * if (sonido )Toolkit.getDefaultToolkit().beep();
+         * }
+         * }}
+         * PARA CLASE INTERNA ANONIMA SERIA:
+         *  public void ejecutarTemporizador(int intervalo, boolean sonido)
+         *  {
+         * Timer miTemporizador = new Timer(intervalo, new ActionListener(){
+         * @Override
+         * public void actionPerformed(ActionEvent e) {
+         * 
+         * Date ahora = new Date ();
+         * System.out.println("Cada tres segundos tiene su hora: "+ahora);
+         * if (sonido )Toolkit.getDefaultToolkit().beep();
+         * }
+         * })
          * }
          */
         ActionListener oyente = new DameLaHora();
