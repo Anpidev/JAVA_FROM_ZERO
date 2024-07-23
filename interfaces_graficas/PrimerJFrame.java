@@ -26,17 +26,24 @@ public class PrimerJFrame {
          * 
          */
 
-         MiJFrame miVentana = new MiJFrame();
+        MiJFrame miVentana = new MiJFrame();
     }
 }
 // SEGUNDA FORMA USANDO UNA CLASE EXTERNA
 
- class MiJFrame extends JFrame {
-    public MiJFrame(){
-    setSize(600, 350);
-    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    setLocation(600, 350);
-    setVisible(true);
+class MiJFrame extends JFrame {
+    public MiJFrame() {
+        // setSize(600, 350);
+
+        // setLocationRelativeTo(null);Si ponemos null la ventana se localiza en el
+        // centro
+        setExtendedState(JFrame.NORMAL);// como aparece la pantalla por ejemplo a pantalla completa, normal, en la barra
+                                        // de tareas como icono.
+        setTitle("Ventana de prueba");
+        setBounds(600, 350, 450, 450);// método para acunar setSize y setLocation de una sola vez
+        // setResizable(false); Para que no se pueda ajustar la pantalla de forma manual
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
 
     }
- }
+}
