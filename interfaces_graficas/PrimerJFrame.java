@@ -1,5 +1,8 @@
 package interfaces_graficas;
 
+import java.awt.Image;
+import java.awt.Toolkit;
+
 import javax.swing.JFrame;
 
 public class PrimerJFrame {
@@ -42,8 +45,17 @@ class MiJFrame extends JFrame {
         setTitle("Ventana de prueba");
         setBounds(600, 350, 450, 450);// método para acunar setSize y setLocation de una sola vez
         // setResizable(false); Para que no se pueda ajustar la pantalla de forma manual
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
+
+        //VAMOS A CAMBIAR EL ICONO DE LA VENTANA
+        Toolkit miSistema=Toolkit.getDefaultToolkit();
+        Image icono= miSistema.getImage("pata.png");
+        setIconImage(icono);
+
+
+
+
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Se cierra el programa al cerrar la ventana
+        setVisible(true);//Ventana visible
 
     }
 }
