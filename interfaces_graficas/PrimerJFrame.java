@@ -47,12 +47,12 @@ class MiJFrame extends JFrame {
         // setResizable(false); Para que no se pueda ajustar la pantalla de forma manual
 
         //VAMOS A CAMBIAR EL ICONO DE LA VENTANA
+        //Usamos getProperty user.home para que independiente del SO busque la carpeta home y luego el resto de la ruta
+        String rutaImagen = System.getProperty("user.home") + "/VSC/JAVA_FROM_ZERO/interfaces_graficas/pata.png";
         Toolkit miSistema=Toolkit.getDefaultToolkit();
-        Image icono= miSistema.getImage("pata.png");
+        Image icono= miSistema.getImage(rutaImagen);
         setIconImage(icono);
-
-
-
+       
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Se cierra el programa al cerrar la ventana
         setVisible(true);//Ventana visible
