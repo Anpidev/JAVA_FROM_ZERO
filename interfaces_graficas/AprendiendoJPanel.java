@@ -7,7 +7,7 @@ import java.awt.Graphics;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class EscribiendoJPanel {
+public class AprendiendoJPanel {
     public static void main(String[] args) {
         MarcoTexto miMarco = new MarcoTexto();
         miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

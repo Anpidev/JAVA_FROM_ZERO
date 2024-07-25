@@ -5,7 +5,7 @@ import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 
-public class PrimerJFrame {
+public class AprendiendoJFrame {
     public static void main(String[] args) {
 
         /*
