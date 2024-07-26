@@ -1,5 +1,6 @@
 package interfaces_graficas;
 
+import java.awt.Color;
 import java.awt.GridLayout;
 
 import javax.swing.JFrame;
@@ -19,6 +20,7 @@ public class MarcoJFrame extends JFrame {
         // Crear instancias de las láminas
         LaminaJPanel miLamina = new LaminaJPanel();
         Lamina2D miLamina2D = new Lamina2D();
+        miLamina2D.setBackground(Color.PINK);
 
         // Agregar las láminas al contenedor
         contenedor.add(miLamina);
