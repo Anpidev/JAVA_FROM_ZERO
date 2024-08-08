@@ -11,28 +11,28 @@ import javax.swing.JPanel;
 public class EventoCambiandoOyente {
 
     public static void main(String[] args) {
-        MarcoTexto miMarco = new MarcoTexto();
+        Marco miMarco = new Marco();
         miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
 
 }
 
-class MarcoTexto extends JFrame {
-    public MarcoTexto() {
+class Marco extends JFrame {
+    public Marco() {
         setBounds(400, 200, 600, 450);
         setVisible(true);
-        PanelJPanel miPanel = new PanelJPanel();
+        Panel miPanel = new Panel();
         add(miPanel);
     }
 
-    class PanelJPanel extends JPanel {
+    class Panel extends JPanel {
         JButton botonAzul = new JButton("Azul");
         JButton botonRojo = new JButton("Rojo");
         JButton botonAmarillo = new JButton("Amarillo");
         // Para agregar el botón a lámina crear constructor
 
-        public PanelJPanel() {
+        public Panel() {
             add(botonAzul);
             add(botonRojo);
             add(botonAmarillo);
@@ -48,15 +48,15 @@ class MarcoTexto extends JFrame {
        private class ColorDeFondo implements ActionListener {
 
             public ColorDeFondo(Color c) {
-                colorDeFondo = c;
+                colorFondo = c;
             }
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                setBackground(colorDeFondo);
+                setBackground(colorFondo);
             }
 
-            private Color colorDeFondo;
+            private Color colorFondo;
 
         }
     }
