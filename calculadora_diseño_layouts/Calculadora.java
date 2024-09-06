@@ -2,8 +2,6 @@ package calculadora_diseño_layouts;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -11,78 +9,100 @@ import javax.swing.JPanel;
 
 public class Calculadora {
     public static void main(String[] args) {
+        // Crear y configurar el marco de la calculadora
         MarcoCalculadora miMarco = new MarcoCalculadora();
         miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
     }
-
 }
 
 class MarcoCalculadora extends JFrame {
     public MarcoCalculadora() {
         setTitle("Calculadora");
         setBounds(150, 170, 400, 500);
-        LaminaCalculadora miLamina = new LaminaCalculadora();
-        add(miLamina);
+
+        // Añadir la lámina principal de la calculadora
+        add(new LaminaCalculadora());
         setVisible(true);
-
     }
-
 }
 
 class LaminaCalculadora extends JPanel {
+    private JButton pantalla;
+    private JPanel numeracion;
+    private boolean comienzo = true;
+    private String ultimaOperacion = "=";
+    private double resultado = 0;
 
     public LaminaCalculadora() {
-        comienzo = true;
         setLayout(new BorderLayout());
         pantalla = new JButton("0");
         pantalla.setEnabled(false);
         add(pantalla, BorderLayout.NORTH);
+
         numeracion = new JPanel();
         numeracion.setLayout(new GridLayout(4, 4));
-        InsertarNumero insertar = new InsertarNumero();
-        crearBoton("7", insertar);
-        crearBoton("8", insertar);
-        crearBoton("9", insertar);
-        crearBoton("/", insertar);
-        crearBoton("4", insertar);
-        crearBoton("5", insertar);
-        crearBoton("6", insertar);
-        crearBoton("x", insertar);
-        crearBoton("1", insertar);
-        crearBoton("2", insertar);
-        crearBoton("3", insertar);
-        crearBoton("-", insertar);
-        crearBoton("0", insertar);
-        crearBoton(".", insertar);
-        crearBoton("=", insertar);
-        crearBoton("+", insertar);
+
+        // Definir los botones numéricos y de operación
+        String[] botones = {
+            "7", "8", "9", "/",
+            "4", "5", "6", "x",
+            "1", "2", "3", "-",
+            "0", ".", "=", "+"
+        };
+
+        // Crear botones con sus respectivos ActionListener
+        for (String texto : botones) {
+            crearBoton(texto);
+        }
 
         add(numeracion, BorderLayout.CENTER);
-
     }
 
-    private void crearBoton(String textoBoton, InsertarNumero oyente) {
-        JButton boton = new JButton(textoBoton);
-        boton.addActionListener(oyente);
+    // Método genérico para crear y agregar botones
+    private void crearBoton(String texto) {
+        JButton boton = new JButton(texto);
+        boton.addActionListener(e -> manejarAccion(texto));
         numeracion.add(boton);
     }
 
-    class InsertarNumero implements ActionListener {
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            String entrada = e.getActionCommand();
+    // Manejar la acción de cada botón
+    private void manejarAccion(String texto) {
+        if ("0123456789.".contains(texto)) {  // Si es un número o un punto decimal
             if (comienzo) {
-                pantalla.setText(entrada);
+                pantalla.setText(texto.equals(".") ? "0." : texto);
                 comienzo = false;
-            } else {
-                pantalla.setText(pantalla.getText() + entrada);
+            } else if (!(texto.equals(".") && pantalla.getText().contains("."))) {  // Evitar múltiples puntos
+                pantalla.setText(pantalla.getText() + texto);
             }
+        } else {  // Si es una operación
+            realizarOperacion(texto);
         }
     }
 
-    private JButton pantalla;
-    private JPanel numeracion;
-    boolean comienzo;
+    // Realiza la operación correspondiente
+    private void realizarOperacion(String operacion) {
+        try {
+            double valorPantalla = Double.parseDouble(pantalla.getText());
+            if (comienzo) {
+                ultimaOperacion = operacion;
+                return;
+            }
+
+            switch (ultimaOperacion) {
+                case "+" -> resultado += valorPantalla;
+                case "-" -> resultado -= valorPantalla;
+                case "x" -> resultado *= valorPantalla;
+                case "/" -> resultado = valorPantalla != 0 ? resultado / valorPantalla : Double.NaN;
+                case "=" -> resultado = valorPantalla;
+            }
+
+            pantalla.setText(Double.isNaN(resultado) ? "Error" : String.valueOf(resultado));
+            ultimaOperacion = operacion;
+            comienzo = true;
+
+        } catch (NumberFormatException ex) {
+            pantalla.setText("Error");
+            comienzo = true;
+        }
+    }
 }

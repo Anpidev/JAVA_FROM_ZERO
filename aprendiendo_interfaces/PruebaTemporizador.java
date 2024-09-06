@@ -9,16 +9,16 @@ import javax.swing.Timer;
 public class PruebaTemporizador {
     public static void main(String[] args) {
 
-        Temporizador oyente = new Temporizador();
-        Timer miTemporizador = new Timer(5000, oyente);
+        Tempo oyente = new Tempo();
+        Timer miTempo = new Timer(5000, oyente);
 
-        miTemporizador.start();
+        miTempo.start();
         JOptionPane.showMessageDialog(null, "Pulsa ACEPTAR para detener");
 
     }
 }
 
-    class Temporizador implements ActionListener{
+    class Tempo implements ActionListener{
 
         @Override
         public void actionPerformed(ActionEvent e) {
