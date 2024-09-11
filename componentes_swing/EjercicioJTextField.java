@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class Ejercicio {
+public class EjercicioJTextField {
     public static void main(String[] args) {
         MarcoEjercicio miMarco = new MarcoEjercicio();
         miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
