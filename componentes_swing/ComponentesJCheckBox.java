@@ -21,13 +21,7 @@ public class ComponentesJCheckBox {
 class MarcoJCheck extends JFrame {
     public MarcoJCheck() {
         setBounds(600, 200, 600, 400);
-        setLayout(new BorderLayout());
-
-        LaminaJCheck texto = new LaminaJCheck();
-
-        LaminaJCheck2 opciones = new LaminaJCheck2(texto);
-        add(texto, BorderLayout.NORTH);
-        add(opciones, BorderLayout.SOUTH);
+        add(new LaminaJCheck());
         setVisible(true);
     }
 
@@ -37,31 +31,26 @@ class LaminaJCheck extends JPanel {
 
     public LaminaJCheck() {
 
-        texto = new JTextArea(7, 20);
-        JScrollPane laminaScroll = new JScrollPane(texto);
-        texto.setLineWrap(true);
-        add(laminaScroll);
+        setLayout(new BorderLayout());
 
-    }
+        JPanel superior = new JPanel();
+        JPanel inferior = new JPanel();
 
-    public void cambiarFuente(int fuente) {
-        texto.setFont(new Font("Serif", fuente, 12));
-    }
+        area = new JTextArea(7, 20);
+        JScrollPane laminaScroll = new JScrollPane(area);
+        area.setLineWrap(true);
+        superior.add(laminaScroll);
 
-    JTextArea texto;
-}
-
-class LaminaJCheck2 extends JPanel {
-
-    public LaminaJCheck2(LaminaJCheck texto) {
-        this.texto = texto;
         casilla1 = new JCheckBox("Poner texto en negrita", false);
         casilla1.addItemListener(new Comprobacion());
-        add(casilla1);
+        inferior.add(casilla1);
 
         casilla2 = new JCheckBox("Poner texto en cursiva", false);
         casilla2.addItemListener(new Comprobacion());
-        add(casilla2);
+        inferior.add(casilla2);
+
+        add(superior, BorderLayout.NORTH);
+        add(inferior, BorderLayout.SOUTH);
 
     }
 
@@ -74,17 +63,17 @@ class LaminaJCheck2 extends JPanel {
                 fuente += Font.BOLD;
             }
             if (casilla2.isSelected()) {
-                fuente += Font.ITALIC; // Añadir estilo cursiva
+                fuente += Font.ITALIC;
             }
 
-            // Actualiza el estilo del texto en el JTextArea
-            if (texto != null) {
-                texto.cambiarFuente(fuente);
+            if (area != null) {
+                area.setFont(new Font("Serif", fuente, 12));
+
             }
 
         }
     }
 
-    JCheckBox casilla1, casilla2;
-    LaminaJCheck texto;
+    private JTextArea area;
+    private JCheckBox casilla1, casilla2;
 }
