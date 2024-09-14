@@ -9,22 +9,22 @@ import javax.swing.text.Document;
 
 public class EventoJTextField {
 public static void main(String[] args) {
-    Marco miMarco = new Marco();
-    miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    MarcoJ miMarcoJ = new MarcoJ();
+    miMarcoJ.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 }
 }
 
-class Marco extends JFrame {
-    public Marco() {
+class MarcoJ extends JFrame {
+    public MarcoJ() {
         setBounds(60, 300, 600, 400);
-        add(new Lamina());
+        add(new LaminaJ());
         setVisible(true);
     }
 
 }
 
-class Lamina extends JPanel {
-    public Lamina() {
+class LaminaJ extends JPanel {
+    public LaminaJ() {
         JTextField cuadroTexto = new JTextField(20);
         Document miDocumento= cuadroTexto.getDocument();
         miDocumento.addDocumentListener(new EscuchaTexto());
