@@ -66,7 +66,7 @@ class LaminaJSlider extends JPanel {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            texto.setFont(new Font((String)miCombo.getSelectedItem(),Font.PLAIN,12));
+            texto.setFont(new Font((String)miCombo.getSelectedItem(),Font.PLAIN,miSlider.getValue()));
         }
 
     }
