@@ -1,4 +1,4 @@
-package calculadora_diseño_layouts;
+package practica_calculadora;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
