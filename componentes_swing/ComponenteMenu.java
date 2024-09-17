@@ -1,5 +1,8 @@
 package componentes_swing;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -45,6 +48,16 @@ class LaminaMarco extends JPanel {
         JMenuItem guardar = new JMenuItem("Guardar");
         JMenuItem guardarComo = new JMenuItem("Guardar como...");
         archivo.add(guardar);
+
+        //Añadir evento
+        guardarComo.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Has pulsado en Guardar como");
+            }
+            
+        });
         archivo.add(guardarComo);
 
         // -------------------SUBELEMENTOS DE
@@ -70,8 +83,11 @@ class LaminaMarco extends JPanel {
         JMenuItem ayuda = new JMenuItem("Ayuda");
         preferencias.add(generales);
         preferencias.add(ayuda);
+
         // Añadir a la lamina
         add(miBarra);
 
     }
+
+   
 }
