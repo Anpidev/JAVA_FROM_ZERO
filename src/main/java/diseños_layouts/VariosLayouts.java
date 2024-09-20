@@ -11,7 +11,7 @@ public class VariosLayouts {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
 
-        MarcoLayout miMarco = new MarcoLayout();
+        MarcoVarios miMarco = new MarcoVarios();
 
         miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -21,16 +21,16 @@ public class VariosLayouts {
 
 }
 
-class MarcoLayout extends JFrame {
+class MarcoVarios extends JFrame {
 
-    public MarcoLayout() {
+    public MarcoVarios() {
 
         setTitle("Disposiciones");
 
         setBounds(600, 350, 600, 300);
 
-        PanelconLayout lamina = new PanelconLayout();
-        PanelconLayout2 lamina2= new PanelconLayout2();
+        PanelVarios lamina = new PanelVarios();
+        PanelVarios2 lamina2= new PanelVarios2();
 
         add(lamina, BorderLayout.SOUTH);
         add(lamina2, BorderLayout.NORTH);
@@ -39,9 +39,9 @@ class MarcoLayout extends JFrame {
 
 }
 
-class PanelconLayout extends JPanel {
+class PanelVarios extends JPanel {
 
-    public PanelconLayout() {
+    public PanelVarios() {
 
         setLayout(new BorderLayout());
 
@@ -54,9 +54,9 @@ class PanelconLayout extends JPanel {
     }
 }
 
-class PanelconLayout2 extends JPanel {
+class PanelVarios2 extends JPanel {
 
-    public PanelconLayout2() {
+    public PanelVarios2() {
         setLayout(new FlowLayout(FlowLayout.LEFT));
 
         add(new JButton("Amarillo"));

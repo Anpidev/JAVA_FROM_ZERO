@@ -7,23 +7,23 @@ import javax.swing.JFrame;
 
 public class EventoVentana {
     public static void main(String[] args) {
-        MarcoVentana miMarco= new MarcoVentana();
+        MarcoVentana_2 miMarco= new MarcoVentana_2();
         miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        miMarco.addWindowListener(new EventosVentana());
+        miMarco.addWindowListener(new EventoVentana_2());
         
     }
 
 }
 
-class MarcoVentana extends JFrame {
+class MarcoVentana_2 extends JFrame {
 
-    public MarcoVentana(){
+    public MarcoVentana_2(){
         setBounds(300,300,600,350);
         setVisible(true);
     }
 }
 
-class EventosVentana implements WindowListener{
+class EventoVentana_2 implements WindowListener{
 
     @Override
     public void windowOpened(WindowEvent e) {

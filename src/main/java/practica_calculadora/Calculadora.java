@@ -10,30 +10,30 @@ import javax.swing.JPanel;
 public class Calculadora {
     public static void main(String[] args) {
         // Crear y configurar el marco de la calculadora
-        MarcoCalculadora miMarco = new MarcoCalculadora();
+        MarcoCalc miMarco = new MarcoCalc();
         miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
 
-class MarcoCalculadora extends JFrame {
-    public MarcoCalculadora() {
+class MarcoCalc extends JFrame {
+    public MarcoCalc() {
         setTitle("Calculadora");
         setBounds(150, 170, 400, 500);
 
         // Añadir la lámina principal de la calculadora
-        add(new LaminaCalculadora());
+        add(new LaminaCalc());
         setVisible(true);
     }
 }
 
-class LaminaCalculadora extends JPanel {
+class LaminaCalc extends JPanel {
     private JButton pantalla;
     private JPanel numeracion;
     private boolean comienzo = true;
     private String ultimaOperacion = "=";
     private double resultado = 0;
 
-    public LaminaCalculadora() {
+    public LaminaCalc() {
         setLayout(new BorderLayout());
         pantalla = new JButton("0");
         pantalla.setEnabled(false);
@@ -89,11 +89,11 @@ class LaminaCalculadora extends JPanel {
             }
 
             switch (ultimaOperacion) {
-                case "+" -> resultado += valorPantalla;
-                case "-" -> resultado -= valorPantalla;
-                case "x" -> resultado *= valorPantalla;
-                case "/" -> resultado = valorPantalla != 0 ? resultado / valorPantalla : Double.NaN;
-                case "=" -> resultado = valorPantalla;
+                case "+" : resultado += valorPantalla;
+                case "-" : resultado -= valorPantalla;
+                case "x" : resultado *= valorPantalla;
+                case "/" :resultado = valorPantalla != 0 ? resultado / valorPantalla : Double.NaN;
+                case "=" : resultado = valorPantalla;
             }
 
             pantalla.setText(Double.isNaN(resultado) ? "Error" : String.valueOf(resultado));

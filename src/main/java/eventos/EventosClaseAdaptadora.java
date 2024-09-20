@@ -8,22 +8,22 @@ import javax.swing.JFrame;
 public class EventosClaseAdaptadora {
 
     public static void main(String[] args) {
-        MarcoVentana miMarco = new MarcoVentana();
+        MarcoAdapta miMarco = new MarcoAdapta();
         miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        miMarco.addWindowListener(new EventosVentana());
+        miMarco.addWindowListener(new EventoAdapta());
     }
 
 }
 
-class MarcoVentana extends JFrame {
+class MarcoAdapta extends JFrame {
 
-    public MarcoVentana() {
+    public MarcoAdapta() {
         setBounds(300, 300, 600, 350);
         setVisible(true);
     }
 }
 
-class EventosVentana extends WindowAdapter {
+class EventoAdapta extends WindowAdapter {
     @Override
     public void windowClosed(WindowEvent e) {
         System.out.println("Gracias por usar nuestra APP. Hasta pronto");
