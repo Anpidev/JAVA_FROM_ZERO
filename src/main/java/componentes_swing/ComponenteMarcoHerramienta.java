@@ -6,6 +6,8 @@ import java.awt.event.ActionEvent;
 
 import javax.swing.AbstractAction;
 import javax.swing.Action;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JToolBar;
@@ -21,15 +23,15 @@ public class ComponenteMarcoHerramienta {
 class MarcoHerramientas extends JFrame {
     JPanel miLamina;
 
-    public MarcoHerramientas() {
+    public MarcoHerramientas(){
         setBounds(600, 500, 300, 550);
         miLamina = new JPanel();
         add(miLamina);
 
      
-        Evento colorAzul = new Evento("Azul", Color.BLUE, miLamina);
-        Evento colorRojo = new Evento("Rojo", Color.RED, miLamina);
-        Evento colorVerde = new Evento("Verde", Color.GREEN, miLamina);
+        EventoHerramientas colorAzul = new EventoHerramientas("Azul", Color.BLUE, new ImageIcon("src/main/java/componentes_swing/azul.gif"));
+        EventoHerramientas colorRojo = new EventoHerramientas("Rojo", Color.RED, new ImageIcon("src/main/java/componentes_swing/rojo.gif"));
+        EventoHerramientas colorVerde = new EventoHerramientas("Verde", Color.GREEN, new ImageIcon("src/main/java/componentes_swing/verde.gif"));
         JToolBar barra = new JToolBar();
         barra.add(colorAzul);
         barra.add(colorRojo);
@@ -40,14 +42,14 @@ class MarcoHerramientas extends JFrame {
     }
 
     // Clase interna Evento
-    private class Evento extends AbstractAction {
+    private class EventoHerramientas extends AbstractAction {
         private JPanel panel;
 
-        public Evento(String nombre, Color colorFondo, JPanel panel) {
+        public EventoHerramientas(String nombre, Color colorFondo, Icon icono) {
             putValue(Action.NAME, nombre);
-            putValue(Action.SHORT_DESCRIPTION, "Pone el JPanel de color " + nombre);
+            putValue(Action.SMALL_ICON, icono);
             putValue("Color_Fondo", colorFondo);
-            this.panel = panel;
+            this.panel = miLamina;
         }
 
         @Override
