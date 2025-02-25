@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"tema7funciones","c":"NumeroPrimoConFuncion","l":"esPrimo(int)"},{"p":"tema7funciones","c":"NumeroPrimoConFuncion","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"tema7funciones","c":"NumeroPrimoConFuncion","l":"NumeroPrimoConFuncion()","u":"%3Cinit%3E()"}];updateSearchResults();
