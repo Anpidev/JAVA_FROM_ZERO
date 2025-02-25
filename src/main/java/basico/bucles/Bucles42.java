@@ -1,4 +1,4 @@
-package bucles;
+package basico.bucles;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

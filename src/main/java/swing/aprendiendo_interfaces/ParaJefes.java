@@ -1,4 +1,4 @@
-package aprendiendo_interfaces;
+package swing.aprendiendo_interfaces;
 
 public interface ParaJefes {
 public abstract void setCargo(String cargo);

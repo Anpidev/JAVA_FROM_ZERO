@@ -1,4 +1,4 @@
-package arrays.bidimensional;
+package arreglos.arrays.bidimensional;
 /*
  * *Ejercicio 4*  
 Modifica el programa anterior de tal forma que las sumas parciales y la suma

@@ -1,4 +1,4 @@
-package arrays.bidimensional;
+package arreglos.arrays.bidimensional;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

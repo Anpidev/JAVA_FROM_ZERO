@@ -1,4 +1,4 @@
-package arrays.bidimensional;
+package arreglos.arrays.bidimensional;
 /*
  * Ejercicio 5
 Realiza un programa que rellene un array de 6 filas por 10 columnas con

@@ -1,4 +1,4 @@
-package arrays.bidimensional;
+package arreglos.arrays.bidimensional;
 
 /*
  * Ejercicio 9

@@ -1,4 +1,4 @@
-package practica_calculadora;
+package calculadora;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;

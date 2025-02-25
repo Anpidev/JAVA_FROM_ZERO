@@ -1,4 +1,4 @@
-package clases_internas;
+package poo.clases_internas;
 
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;

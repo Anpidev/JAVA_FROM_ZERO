@@ -1,4 +1,4 @@
-package diseños_layouts;
+package swing.diseños_layouts;
 
 import java.awt.BorderLayout;
 

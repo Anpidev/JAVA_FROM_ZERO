@@ -1,4 +1,4 @@
-package componentes_swing;
+package swing.componentes_swing;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;

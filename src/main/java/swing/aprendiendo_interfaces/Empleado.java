@@ -1,4 +1,4 @@
-package aprendiendo_interfaces;
+package swing.aprendiendo_interfaces;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

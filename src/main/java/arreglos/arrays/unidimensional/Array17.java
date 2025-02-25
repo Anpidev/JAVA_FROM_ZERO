@@ -1,4 +1,4 @@
-package arrays.unidimensional;
+package arreglos.arrays.unidimensional;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

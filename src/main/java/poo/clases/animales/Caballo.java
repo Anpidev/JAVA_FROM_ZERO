@@ -1,4 +1,4 @@
-package ejercicios_poo.clases.animales;
+package poo.clases.animales;
 
 public class Caballo {
 

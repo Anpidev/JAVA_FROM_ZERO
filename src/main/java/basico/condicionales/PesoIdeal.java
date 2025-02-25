@@ -1,4 +1,4 @@
-package condicionales;
+package basico.condicionales;
 /*Debes crear un programa que permita calcular el peso ideal de una persona teniendo en cuenta
 lo siguiente:
 • Si la persona es una mujer, el peso ideal será igual a la altura en cm -120

@@ -1,4 +1,4 @@
-package clases_internas;
+package poo.clases_internas;
 
 import javax.swing.JOptionPane;
 

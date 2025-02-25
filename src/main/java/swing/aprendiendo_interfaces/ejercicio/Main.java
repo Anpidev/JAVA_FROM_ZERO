@@ -1,4 +1,4 @@
-package aprendiendo_interfaces.ejercicio;
+package swing.aprendiendo_interfaces.ejercicio;
 
 public class Main {
     public static void main(String[] args) {

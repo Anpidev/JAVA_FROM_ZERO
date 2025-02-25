@@ -1,4 +1,4 @@
-package bucles;
+package basico.bucles;
 import java.util.Scanner;
 
 /**

@@ -1,4 +1,4 @@
-package arrays.bidimensional;
+package arreglos.arrays.bidimensional;
 
 /**
  * Realiza un programa que calcule la estatura media, mínima y máxima en

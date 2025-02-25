@@ -1,4 +1,4 @@
-package arrays.unidimensional;
+package arreglos.arrays.unidimensional;
 /*En este ejercicio debes crear un array de 100 elementos que guarde en cada una de las
 posiciones un no aleatorio entre 1 y 100. El programa debe imprimir en consola todos los valores
 almacenados en el array. Utiliza un bucle for-each para leer los valores almacenados. (Debes

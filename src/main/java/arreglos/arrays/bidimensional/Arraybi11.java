@@ -1,4 +1,4 @@
-package arrays.bidimensional;
+package arreglos.arrays.bidimensional;
 /**
  * Realiza un programa que muestre por pantalla un array de 9 filas por 9
 columnas relleno con números aleatorios entre 500 y 900. A continuación, el

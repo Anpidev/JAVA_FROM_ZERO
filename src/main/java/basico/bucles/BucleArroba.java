@@ -1,4 +1,4 @@
-package bucles;
+package basico.bucles;
 /*En este ejercicio se pide al usuario que introduzca su dirección de email con ayuda de la clase
 JOptionPane.
 Una vez introducido el email, el programa debe decir si la dirección de email es correcta o no

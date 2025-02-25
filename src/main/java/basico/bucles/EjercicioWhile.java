@@ -1,4 +1,4 @@
-package bucles;
+package basico.bucles;
 /*En este ejercicio se trata de adivinar en el menor número de intentos posibles un número entero
 aleatorio entre 1 y 100 generado por el programa.
 Al ejecutar el programa, este generará un número aleatorio entre 1 y 100 que el usuario no

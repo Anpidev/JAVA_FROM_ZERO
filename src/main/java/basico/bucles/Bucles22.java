@@ -1,4 +1,4 @@
-package bucles;
+package basico.bucles;
 
 /**
  * Ejercicio 22 Muestra por pantalla todos los números primos entre 2 y 100,

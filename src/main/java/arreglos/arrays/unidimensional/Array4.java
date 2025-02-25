@@ -1,4 +1,4 @@
-package arrays.unidimensional;
+package arreglos.arrays.unidimensional;
 
 /**
  * Ejercicio 4

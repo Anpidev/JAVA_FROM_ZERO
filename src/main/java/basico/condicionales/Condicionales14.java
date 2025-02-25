@@ -1,4 +1,4 @@
-package condicionales;
+package basico.condicionales;
 
 import java.util.Scanner;
 

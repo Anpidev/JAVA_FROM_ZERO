@@ -1,4 +1,4 @@
-package arrays.bidimensional;
+package arreglos.arrays.bidimensional;
 
 /**
  * Realiza un programa que muestre por pantalla un array de 10 filas por 10

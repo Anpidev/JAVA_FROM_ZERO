@@ -1,4 +1,4 @@
-package ejercicios_poo.clases_abstractas.empleado;
+package poo.clases_abstractas.empleado;
 
 public class UsoEmpleado {
     public static void main(String[] args) {

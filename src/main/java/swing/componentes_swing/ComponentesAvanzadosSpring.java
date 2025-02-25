@@ -1,6 +1,6 @@
 
  
-package componentes_swing;
+package swing.componentes_swing;
 
 
 

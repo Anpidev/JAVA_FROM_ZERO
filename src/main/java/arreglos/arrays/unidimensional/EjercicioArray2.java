@@ -1,4 +1,4 @@
-package arrays.unidimensional;
+package arreglos.arrays.unidimensional;
 /*En este ejercicio, se pide al usuario que introduzca 10 números enteros por consola. Los
 números se almacenarán en un array y el programa calculará la media de los números
 introducidos en las posiciones pares del array. (Debes utilizar el operador módulo “%”). */

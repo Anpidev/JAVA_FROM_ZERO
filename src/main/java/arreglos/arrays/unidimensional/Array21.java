@@ -1,4 +1,4 @@
-package arrays.unidimensional;
+package arreglos.arrays.unidimensional;
 /*
  * Ejercicio 21
 Escribe un programa que rellene un array de 15 elementos con números enteros

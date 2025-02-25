@@ -1,4 +1,4 @@
-package ejercicios_poo.clases.colegio;
+package poo.clases.colegio;
 
 public class Alumno {
 

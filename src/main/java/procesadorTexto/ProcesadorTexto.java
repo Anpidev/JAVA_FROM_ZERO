@@ -1,4 +1,4 @@
-package practica_procesadorTexto;
+package procesadorTexto;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -87,15 +87,15 @@ class LaminaProcesador extends JPanel {
 		herramientas.setFloatable(true); // Permite que el usuario mueva la barra
 
 		// Botones de la barra de herramientas
-		JButton negritaBoton = new JButton(new ImageIcon("src/main/java/practica_procesadorTexto/negrita.png"));
-		JButton cursivaBoton = new JButton(new ImageIcon("src/main/java/practica_procesadorTexto/cursiva.png"));
-		JButton subrayaBoton = new JButton(new ImageIcon("src/main/java/practica_procesadorTexto/subrayar.png"));
-		JButton rojoBoton = new JButton(new ImageIcon("src/main/java/practica_procesadorTexto/rojo.png"));
-		JButton azulBoton = new JButton(new ImageIcon("src/main/java/practica_procesadorTexto/azul.png"));
-		JButton verdeBoton = new JButton(new ImageIcon("src/main/java/practica_procesadorTexto/verde.png"));
-		JButton aliCentro = new JButton(new ImageIcon("src/main/java/practica_procesadorTexto/centro.png"));
-		JButton aliDerecha = new JButton(new ImageIcon("src/main/java/practica_procesadorTexto/derecha.png"));
-		JButton aliIzquierda = new JButton(new ImageIcon("src/main/java/practica_procesadorTexto/izquierda.png"));
+		JButton negritaBoton = new JButton(new ImageIcon("src/main/java/procesadorTexto/negrita.png"));
+		JButton cursivaBoton = new JButton(new ImageIcon("src/main/java/procesadorTexto/cursiva.png"));
+		JButton subrayaBoton = new JButton(new ImageIcon("src/main/java/procesadorTexto/subrayar.png"));
+		JButton rojoBoton = new JButton(new ImageIcon("src/main/java/procesadorTexto/rojo.png"));
+		JButton azulBoton = new JButton(new ImageIcon("src/main/java/procesadorTexto/azul.png"));
+		JButton verdeBoton = new JButton(new ImageIcon("src/main/java/procesadorTexto/verde.png"));
+		JButton aliCentro = new JButton(new ImageIcon("src/main/java/procesadorTexto/centro.png"));
+		JButton aliDerecha = new JButton(new ImageIcon("src/main/java/procesadorTexto/derecha.png"));
+		JButton aliIzquierda = new JButton(new ImageIcon("src/main/java/procesadorTexto/izquierda.png"));
 
 		// Añadir ActionListener a los botones
 		negritaBoton.addActionListener(new StyledEditorKit.BoldAction());

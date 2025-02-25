@@ -1,4 +1,4 @@
-package componentes_swing;
+package swing.componentes_swing;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
