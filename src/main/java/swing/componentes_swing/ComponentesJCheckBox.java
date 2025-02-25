@@ -14,7 +14,7 @@ import javax.swing.JTextArea;
 public class ComponentesJCheckBox {
     public static void main(String[] args) {
         MarcoJCheck miMarco = new MarcoJCheck();
-        miMarco.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        miMarco.setDefaultCloseOperation(3);
     }
 }
 
