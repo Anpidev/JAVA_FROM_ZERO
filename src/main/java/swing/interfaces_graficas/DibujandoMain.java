@@ -1,4 +1,4 @@
-package interfaces_graficas;
+package swing.interfaces_graficas;
 import javax.swing.JFrame;
 
 public class DibujandoMain {

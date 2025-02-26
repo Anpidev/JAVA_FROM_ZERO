@@ -1,4 +1,4 @@
-package ejercicios_poo.clases.password;
+package poo.clases.password;
 
 import java.util.Scanner;
 

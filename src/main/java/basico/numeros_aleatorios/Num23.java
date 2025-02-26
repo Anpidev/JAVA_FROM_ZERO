@@ -1,4 +1,4 @@
-package numeros_aleatorios;
+package basico.numeros_aleatorios;
 
 /**
  * Ejercicio 23 Las caras de un dado de poker tienen las siguientes figuras: As,

@@ -1,4 +1,4 @@
-package variables;
+package basico.variables;
 /*
  Ejercicio 3
 Crea las variables nombre, direccion y telefono y asígnales los valores correspondientes. 

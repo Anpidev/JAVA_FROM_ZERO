@@ -1,4 +1,4 @@
-package interfaces_graficas;
+package swing.interfaces_graficas;
 
 import java.awt.Color; // Importar clase Color para establecer el color del fondo
 import java.awt.Graphics; // Importar clase Graphics para realizar dibujos

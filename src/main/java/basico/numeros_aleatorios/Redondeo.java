@@ -1,4 +1,4 @@
-package numeros_aleatorios;
+package basico.numeros_aleatorios;
 /*Crea una nueva clase con el nombre de “Redondeo_numerico”. Declara una variable con el
 nombre de “numero” y almacena en ella el valor 16.35.
 Sin declarar ninguna variable más, al ejecutar el programa deberá salir en consola el mensaje

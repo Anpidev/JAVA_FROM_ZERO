@@ -1,4 +1,4 @@
-package numeros_aleatorios;
+package basico.numeros_aleatorios;
 
 /**
  * Ejercicio 11 Escribe un programa que muestre 20 notas generadas al azar. Las

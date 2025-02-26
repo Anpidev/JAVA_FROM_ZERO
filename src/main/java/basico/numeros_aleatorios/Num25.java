@@ -1,4 +1,4 @@
-package numeros_aleatorios;
+package basico.numeros_aleatorios;
 
 /**
  * Ejercicio 25 Escribe un programa que muestre por pantalla 100 números enteros

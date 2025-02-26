@@ -1,4 +1,4 @@
-package numeros_aleatorios;
+package basico.numeros_aleatorios;
 
 /**
  * Ejercicio 1 Escribe un programa que muestre la tirada de tres dados. Se debe

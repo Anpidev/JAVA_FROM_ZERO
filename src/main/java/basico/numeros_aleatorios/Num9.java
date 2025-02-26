@@ -1,4 +1,4 @@
-package numeros_aleatorios;
+package basico.numeros_aleatorios;
 
 /**
  * Ejercicio 9 Realiza un programa que vaya generando números aleatorios pares

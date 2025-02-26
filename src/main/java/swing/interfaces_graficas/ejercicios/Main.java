@@ -1,4 +1,4 @@
-package interfaces_graficas.ejercicios;
+package swing.interfaces_graficas.ejercicios;
 
 public class Main {
     public static void main(String[] args) {

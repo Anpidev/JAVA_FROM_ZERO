@@ -1,4 +1,4 @@
-package ejercicios_poo.clases.paqueteria;
+package poo.clases.paqueteria;
 
 /*Clase 1: Clase Sucursal. Encargada de construir objetos de tipo Sucursal con las
 siguientes características:

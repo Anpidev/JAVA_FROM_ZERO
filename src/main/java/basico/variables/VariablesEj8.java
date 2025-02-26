@@ -1,4 +1,4 @@
-package variables;
+package basico.variables;
 /*
 Ejercicio 8
 Escribe un programa que declare 5 variables de tipo char. 

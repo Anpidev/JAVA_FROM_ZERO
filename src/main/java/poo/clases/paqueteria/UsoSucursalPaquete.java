@@ -1,4 +1,4 @@
-package ejercicios_poo.clases.paqueteria;
+package poo.clases.paqueteria;
 
 import java.util.Scanner;
 

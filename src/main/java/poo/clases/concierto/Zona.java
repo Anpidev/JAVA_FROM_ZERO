@@ -1,4 +1,4 @@
-package ejercicios_poo.clases.concierto;
+package poo.clases.concierto;
 
 public class Zona {
 

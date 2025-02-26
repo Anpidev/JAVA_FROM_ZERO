@@ -1,4 +1,4 @@
-package ejercicios_poo.herencias.vehiculo;
+package poo.herencias.vehiculo;
 
 class Bicicleta extends Vehiculo {
     Bicicleta(String color, String modelo, int year, int pinones) {

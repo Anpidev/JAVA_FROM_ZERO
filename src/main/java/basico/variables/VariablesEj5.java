@@ -1,4 +1,4 @@
-package variables;
+package basico.variables;
 /*
 Ejercicio 5
 Realiza un conversor de pesetas a euros. 

@@ -1,4 +1,4 @@
-package ejercicios_poo.clases.matematicas;
+package poo.clases.matematicas;
 
 public class Fraccion {
 

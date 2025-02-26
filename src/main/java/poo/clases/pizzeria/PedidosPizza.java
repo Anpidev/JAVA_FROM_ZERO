@@ -1,4 +1,4 @@
-package ejercicios_poo.clases.pizzeria;
+package poo.clases.pizzeria;
 
 public class PedidosPizza {
     public static void main(String[] args) {

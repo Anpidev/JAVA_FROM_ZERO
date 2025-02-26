@@ -1,4 +1,4 @@
-package ejercicios_poo.clases.paqueteria;
+package poo.clases.paqueteria;
 
 /*Clase 2: Clase Paquete. Encargada de construir objetos de tipo Paquete con las
 siguientes características:

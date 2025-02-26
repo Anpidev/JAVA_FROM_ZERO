@@ -1,4 +1,4 @@
-package ejercicios_poo.herencias.vehiculo;
+package poo.herencias.vehiculo;
 
 public class Vehiculo {
     private static int vehiculosCreados;

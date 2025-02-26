@@ -1,4 +1,4 @@
-package variables;
+package basico.variables;
 /*
  Ejercicio 2
 Crea la variable nombre y asígnale tu nombre completo.

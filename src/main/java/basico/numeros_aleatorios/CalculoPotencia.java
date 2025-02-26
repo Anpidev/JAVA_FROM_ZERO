@@ -1,4 +1,4 @@
-package numeros_aleatorios;
+package basico.numeros_aleatorios;
 /*Crea una clase nueva con el nombre de “Calculo_Potencia”. Declara dos variables en la misma
 línea con los nombres de “base” y “exponente”.
 En la siguiente línea de código inicia la variable “base” en 5. A continuación inicia la variable

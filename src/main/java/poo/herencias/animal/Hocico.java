@@ -1,4 +1,4 @@
-package ejercicios_poo.herencias.animal;
+package poo.herencias.animal;
 
 public enum Hocico {
    DOLICOCÉFALO, MESOCÉFALO,BRAQUICÉFALO

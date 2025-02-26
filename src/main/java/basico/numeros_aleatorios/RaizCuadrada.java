@@ -1,4 +1,4 @@
-package numeros_aleatorios;
+package basico.numeros_aleatorios;
 /*Crea una clase nueva con el nombre de “Raiz_cuadrada”. Declara dos variables de tipo entero
 con los nombres de “numero” y “resultado”.
 Inicia la variable “numero” con el valor 9.

@@ -1,4 +1,4 @@
-package numeros_aleatorios;
+package basico.numeros_aleatorios;
 
 /**
  * Ejercicio 3 Igual que el ejercicio anterior pero con la baraja española. Se

@@ -1,4 +1,4 @@
-package ejercicios_poo.modificadores_de_acceso;
+package poo.modificadores_de_acceso;
 
 /*public class Ejemplo2 extends Ejemplo1{
 String miMensaje=mensaje;

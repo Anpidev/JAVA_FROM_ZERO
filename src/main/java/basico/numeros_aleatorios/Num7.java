@@ -1,4 +1,4 @@
-package numeros_aleatorios;
+package basico.numeros_aleatorios;
 
 /**
  * Ejercicio 7 Escribe un programa que muestre tres apuestas de la quiniela en

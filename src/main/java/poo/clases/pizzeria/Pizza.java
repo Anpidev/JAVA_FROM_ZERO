@@ -1,4 +1,4 @@
-package ejercicios_poo.clases.pizzeria;
+package poo.clases.pizzeria;
 
 public class Pizza {
     private String tipo;

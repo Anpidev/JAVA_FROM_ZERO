@@ -1,4 +1,4 @@
-package numeros_aleatorios;
+package basico.numeros_aleatorios;
 
 /**
  * Ejercicio 18 Sinestesio y Casilda van a pintar los tres dormitorios de su

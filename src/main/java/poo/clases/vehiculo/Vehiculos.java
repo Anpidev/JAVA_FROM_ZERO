@@ -1,4 +1,4 @@
-package ejercicios_poo.clases.vehiculo;
+package poo.clases.vehiculo;
 
 public class Vehiculos {
 

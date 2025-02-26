@@ -1,4 +1,4 @@
-package ejercicios_poo.herencias.animal;
+package poo.herencias.animal;
 
 public class Gato extends Mamifero {
     private String raza;

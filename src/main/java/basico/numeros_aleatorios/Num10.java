@@ -1,4 +1,4 @@
-package numeros_aleatorios;
+package basico.numeros_aleatorios;
 
 /**
  * Ejercicio 10 Realiza un programa que pinte por pantalla diez líneas formadas
