@@ -16,9 +16,7 @@ o Métodos:
 public class Paquete {
 
     public Paquete(int referencia, double peso, String dni, int prioridad) {
-        this.referencia = referencia;
         this.peso = peso;
-        this.dni = dni;
         this.prioridad = prioridad;
     }
 
@@ -38,9 +36,7 @@ public class Paquete {
         return prioridad;
     }
 
-    private int referencia;
     private double peso;
-    private String dni;
     private int prioridad;
 
 }

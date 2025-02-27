@@ -40,7 +40,7 @@ class TecladoEventos implements KeyListener {
          * También se puede usar en vez de getKeyCode la constante seria asi:
          * KeyEvent.VK_J --VK.J es la constante para J.
          */
-        System.out.println("Has pulsado la tecla: "+e.getKeyText(e.getKeyCode()));
+        System.out.println("Has pulsado la tecla: "+KeyEvent.getKeyText(e.getKeyCode()));
     }
 
     @Override

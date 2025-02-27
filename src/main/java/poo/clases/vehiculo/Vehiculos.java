@@ -7,16 +7,12 @@ public class Vehiculos {
         metodo muy rigido.*/
         ruedas = 4;
         largo = 2;
-        ancho = 1;
-        peso = 2;
         color = "sin color";
     }
 
     public Vehiculos(int ruedas){
         this.ruedas=ruedas;
         largo = 2;
-        ancho = 1;
-        peso = 2;
         color = "sin color";
 
     }
@@ -46,6 +42,4 @@ public class Vehiculos {
     private int ruedas; // private solo se puede usar desde esta clase
     private String color;
     private int largo;
-    private int ancho;
-    private int peso;
 }

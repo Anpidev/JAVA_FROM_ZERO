@@ -4,14 +4,7 @@ public class Vehiculo {
     private static int vehiculosCreados;
     private static double kilometrosTotales;
     private double kilometrosRecorridos;
-    private String color;
-    private String modelo;
-    private int year;
-
     public Vehiculo(String color, String modelo, int year) {
-        this.color = color;
-        this.modelo = modelo;
-        this.year = year;
         vehiculosCreados++;
     }
 

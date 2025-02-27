@@ -6,7 +6,6 @@ public class Password {
 
     // Constructor
     public Password(int longitud) {
-        this.longitud = longitud;
         createPassword(longitud);
     }
 
@@ -102,5 +101,4 @@ public class Password {
     // Campos de clase
     private boolean goodPassword;
     private String password;
-    private int longitud;
 }

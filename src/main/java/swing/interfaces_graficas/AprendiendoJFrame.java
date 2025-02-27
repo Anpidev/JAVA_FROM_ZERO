@@ -29,7 +29,7 @@ public class AprendiendoJFrame {
          * 
          */
 
-        MiJFrame miVentana = new MiJFrame();
+        
     }
 }
 // SEGUNDA FORMA USANDO UNA CLASE EXTERNA

@@ -255,8 +255,6 @@ class PanelCalculadora extends JPanel{
 	
 	private boolean comienzo;
 	
-	private String ultimaOperacion="";
-	
 	private double resultado;
 	
 	private double ultimoValor;
