@@ -16,7 +16,7 @@ class Escribir {
     
     public void escribiendo() {
         String texto = "Estamos escribiendo a través de Streams";
-        String ruta = System.getProperty("user.home") + "/Documentos/streamNuevo.txt"; // Ajustar según el sistema
+        String ruta = System.getProperty("user.home") + "/Documentos/streamNuevo.txt"; 
         
         try (FileWriter documento = new FileWriter(ruta)) {
             documento.write(texto);
