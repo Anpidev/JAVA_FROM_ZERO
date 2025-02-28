@@ -1,4 +1,4 @@
-package progrmacionGenerica.arraylist;
+package colecciones.arraylist;
 
 import java.util.Scanner;
 
