@@ -40,7 +40,7 @@ class MarcoServidorChat extends JFrame implements Runnable {
 		setVisible(true);
 
 		// Comenzar multiples hilos
-		Thread miHilo = new Thread();
+		Thread miHilo = new Thread(this);
 		miHilo.start();
 
 	}
